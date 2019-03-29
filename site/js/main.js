@@ -22,7 +22,7 @@ function Pun(event){
         document.getElementById("pun").innerHTML = "For when you want need to tell your ex burn voyage."
 
     }else if(pun_num == 4){
-        document.getElementById("pun").innerHTML = "Turn suburban to suburburn."
+        document.getElementById("pun").innerHTML = "Turn the neighbourhood into a neighburnhood."
 
     }else if(pun_num == 5){
         document.getElementById("pun").innerHTML = "Give your mother in law a sweet chilli blaze."
@@ -41,4 +41,18 @@ function Pun(event){
     }
 }
 
+function NewsLetterClosed(event){
+    let  status = sessionStorage.getItem('NewsLetterStatus')
+    if (status == 'closed'){
+        let letterpopup = document.querySelector('.newsletter')
+        letterpopup.outerHTML = ''
+    }
+}
+
+function NewsLetterClose(event){
+    sessionStorage.setItem('NewsLetterStatus', 'closed')
+    NewsLetterClosed()
+}
+
 window.onload = Pun()
+window.onload = NewsLetterClosed()
