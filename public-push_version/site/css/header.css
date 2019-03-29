@@ -1,0 +1,12 @@
+header {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  min-width: 100vw;
+  background-color: white; }
+
+#header_title {
+  margin: 0;
+  font-size: 2rem; }
+
+.header_icon {
+  font-size: 4.5rem; }

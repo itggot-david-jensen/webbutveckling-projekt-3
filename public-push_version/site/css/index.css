@@ -1,0 +1,19 @@
+.indexcontent {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  min-height: 100%; }
+
+.hotstuff {
+  background-color: aliceblue;
+  position: relative; }
+
+.skew {
+  position: absolute;
+  right: -50%;
+  bottom: 5%;
+  transform: skew(30deg);
+  background-color: black; }
+  .skew p {
+    color: white;
+    font-size: 3rem;
+    padding-left: 1rem; }
